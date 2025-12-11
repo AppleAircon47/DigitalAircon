@@ -1,6 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from '../components/Navbar';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,14 +9,14 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   variable: "--font-poppins",
 });
 
 export const metadata = {
-  metadataBase: new URL("https://musk-appliance.vercel.app/"), // ✅ change to real domain  
+  metadataBase: new URL("https://musk-appliance.vercel.app/"), // ✅ change to real domain
   title: {
     default: "Apple Aircon | AC Repair & Installation Services",
     template: "%s | Apple Aircon",
@@ -47,11 +48,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning
+      <body
+        suppressHydrationWarning
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-         <Navbar />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

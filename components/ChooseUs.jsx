@@ -167,7 +167,7 @@ export default function WhyChooseUs() {
                             key={index}
                             custom={index}
                             variants={statCounter}
-                            className="bg-white rounded-2xl p-6 text-center shadow-xl transform hover:-translate-y-2 transition duration-300 active:-translate-y-1 active:shadow-2xl focus-visible:-translate-y-2 focus-visible:shadow-2xl overflow-hidden relative group"
+                            className="bg-white rounded-2xl p-6 text-center shadow-xl transform hover:-translate-y-2 transition duration-300 active:-translate-y-1 active:shadow-2xl focus-visible:-translate-y-2 focus-visible:shadow-2xl overflow-hidden relative group select-none"
                         >
                             {/* Animated background effect */}
                             <div className="absolute inset-0 bg-linear-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0 translate-x-full group-hover:translate-x-fulltransition-transform duration-1000" />
@@ -203,20 +203,22 @@ export default function WhyChooseUs() {
                             whileHover={{ scale: 1.03, y: -5 }}
                             className="relative"
                         >
-                            <div className="bg-white rounded-2xl p-6 shadow-xl transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl active:-translate-y-1 active:shadow-2xl focus-visible:-translate-y-2 focus-visible:shadow-2xl h-full border border-transparent hover:border-blue-200">
-                                {/* Icon with Gradient Background */}
-                                <motion.div
-                                    className={`inline-flex p-4 rounded-xl bg-linear-to-br ${feature.color} mb-6 text-white`}
-                                    whileHover={{ rotate: 360 }}
-                                    whileTap={{ rotate: 360 }}
-                                    transition={{ duration: 0.6, ease: "easeInOut" }}
-                                >
-                                    {feature.icon}
-                                </motion.div>
+                            <div className="bg-white rounded-2xl p-6 shadow-xl transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl active:-translate-y-1 active:shadow-2xl focus-visible:-translate-y-2 focus-visible:shadow-2xl h-full border border-transparent hover:border-blue-200 select-none">
+                                {/* INLINE ICON + TITLE */}
+                                <div className="flex items-center gap-4 mb-6">
+                                    <motion.div
+                                        className={`inline-flex p-4 rounded-xl bg-linear-to-br ${feature.color} text-white`}
+                                        whileHover={{ rotate: 360 }}
+                                        whileTap={{ rotate: 360 }}
+                                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                                    >
+                                        {feature.icon}
+                                    </motion.div>
 
-                                <h3 className="text-xl font-bold text-gray-800 mb-3">
-                                    {feature.title}
-                                </h3>
+                                    <h3 className="text-xl font-bold text-gray-800">
+                                        {feature.title}
+                                    </h3>
+                                </div>
 
                                 <p className="text-gray-600 leading-relaxed">
                                     {feature.description}
@@ -225,6 +227,47 @@ export default function WhyChooseUs() {
                         </motion.div>
                     ))}
                 </motion.div>
+
+                {/* <motion.div
+                    variants={staggerContainer}
+                    initial="hidden"
+                    animate={isInView ? "visible" : "hidden"}
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    {features.map((feature, index) => (
+                        <motion.div
+                            key={index}
+                            variants={fadeInUp}
+                            initial="hidden"
+                            animate={isInView ? "visible" : "hidden"}
+                            whileHover={{ scale: 1.03, y: -5 }}
+                            className="relative"
+                        >
+                            <div className="bg-white rounded-2xl p-6 shadow-xl transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl active:-translate-y-1 active:shadow-2xl focus-visible:-translate-y-2 focus-visible:shadow-2xl h-full border border-transparent hover:border-blue-200">
+
+                                <div className="flex items-center gap-4 mb-6">
+                                    <motion.div
+                                        className={`inline-flex p-4 rounded-xl bg-linear-to-br ${feature.color} text-white`}
+                                        whileHover={{ rotate: 360 }}
+                                        whileTap={{ rotate: 360 }}
+                                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                                    >
+                                        {feature.icon}
+                                    </motion.div>
+
+                                    <h3 className="text-xl font-bold text-gray-800">
+                                        {feature.title}
+                                    </h3>
+                                </div>
+
+                                <p className="text-gray-600 leading-relaxed">
+                                    {feature.description}
+                                </p>
+
+                            </div>
+                        </motion.div>
+                    ))}
+                </motion.div> */}
 
                 {/* Additional Benefits */}
                 <motion.div

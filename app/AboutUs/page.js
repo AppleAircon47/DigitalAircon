@@ -148,33 +148,77 @@ export default function AboutUsPage() {
     },
   ];
 
+  // const milestones = [
+  //   {
+  //     year: "2012",
+  //     title: "Foundation",
+  //     description:
+  //       "Apple Aircon started as a small AC service center in Navi Mumbai",
+  //   },
+  //   {
+  //     year: "2015",
+  //     title: "Expansion",
+  //     description: "Added home appliance repair services to our portfolio",
+  //   },
+  //   {
+  //     year: "2018",
+  //     title: "Brand Partnership",
+  //     description: "Became authorized service partner for major AC brands",
+  //   },
+  //   {
+  //     year: "2020",
+  //     title: "Digital Presence",
+  //     description: "Launched online booking system for easy service access",
+  //   },
+  //   {
+  //     year: "2023",
+  //     title: "Market Leader",
+  //     description:
+  //       "Became Navi Mumbai's most trusted AC & appliance service provider",
+  //   },
+  // ];
   const milestones = [
     {
-      year: "2012",
-      title: "Foundation",
+      year: "2019",
+      title: "Humble Beginning",
       description:
-        "Apple Aircon started as a small AC service center in Navi Mumbai",
-    },
-    {
-      year: "2015",
-      title: "Expansion",
-      description: "Added home appliance repair services to our portfolio",
-    },
-    {
-      year: "2018",
-      title: "Brand Partnership",
-      description: "Became authorized service partner for major AC brands",
+        "Started as a small, two-person service team offering basic AC repair and maintenance for homes in our local area.",
     },
     {
       year: "2020",
-      title: "Digital Presence",
-      description: "Launched online booking system for easy service access",
+      title: "Built Trust in the Neighborhood",
+      description:
+        "Earned customer trust through honest pricing and reliable service. Word-of-mouth recommendations helped us grow steadily.",
+    },
+    {
+      year: "2021",
+      title: "Expanded Service Categories",
+      description:
+        "Added appliance repair services including refrigerators, washing machines, and microwaves to meet rising customer needs.",
+    },
+    {
+      year: "2022",
+      title: "Professional Team Formation",
+      description:
+        "Hired certified technicians and introduced a more structured service process for quicker response and better customer experience.",
     },
     {
       year: "2023",
-      title: "Market Leader",
+      title: "Service Coverage Expansion",
       description:
-        "Became Navi Mumbai's most trusted AC & appliance service provider",
+        "Extended our services to nearby areas and began offering same-day AC repair and seasonal maintenance packages.",
+    },
+    {
+      year: "2024",
+      title: "Digital Booking & Customer Support",
+      description:
+        "Launched online booking and WhatsApp support, making it easier for customers to schedule repairs and track service updates.",
+    },
+    {
+      year: "2025",
+      title: "Growing as a Trusted Local Brand",
+      description:
+        "With thousands of successful repairs and loyal repeat customers, we continue to improve our service quality and technician training.",
     },
   ];
 
@@ -404,7 +448,7 @@ export default function AboutUsPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+              className="grid md:grid-cols-2 lg:grid-cols-4 gap-4"
             >
               {values.map((value, index) => (
                 <motion.div
@@ -434,7 +478,7 @@ export default function AboutUsPage() {
                       {value.icon}
                     </motion.div>
 
-                    <h3 className="text-xl font-bold text-gray-800 relative z-10 md:text-center md:mt-4">
+                    <h3 className="text-xl font-bold text-gray-800 relative z-10">
                       {value.title}
                     </h3>
                   </div>
@@ -444,7 +488,7 @@ export default function AboutUsPage() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 + 0.2 }}
-                    className="text-gray-600 leading-relaxed relative z-10 md:text-center"
+                    className="text-gray-600 leading-relaxed relative z-10"
                   >
                     {value.description}
                   </motion.p>
@@ -453,6 +497,7 @@ export default function AboutUsPage() {
             </motion.div>
           </div>
         </section>
+
         {/* Milestones Timeline */}
         <section className="py-16 bg-[#f7faff]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -544,112 +589,6 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
-
-        {/* CTA Section */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={scaleIn}
-          className="py-16 bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff]"
-        >
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-            <motion.div
-              variants={cardHover}
-              initial="rest"
-              whileInView="visible"
-              whileHover="hover"
-              className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden"
-            >
-              {/* Animated background pattern */}
-              <motion.div
-                animate={{
-                  rotate: 360,
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{
-                  rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                  scale: { duration: 5, repeat: Infinity, ease: "easeInOut" },
-                }}
-                className="absolute -top-20 -right-20 w-40 h-40 bg-blue-100/30 rounded-full blur-3xl"
-              />
-
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl sm:text-4xl font-extrabold text-[#1e40af] mb-6"
-              >
-                Experience the Apple Aircon Difference
-              </motion.h2>
-
-              <motion.p
-                variants={fadeInUp}
-                className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto"
-              >
-                Join thousands of satisfied customers in Navi Mumbai who trust
-                Apple Aircon for their AC and appliance needs. Let us solve your
-                cooling and home appliance problems with expertise and care.
-              </motion.p>
-
-              <motion.div
-                variants={staggerContainer}
-                className="flex flex-col sm:flex-row gap-4 justify-center"
-              >
-                <motion.a
-                  variants={fadeInUp}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  href="tel:+918879873774"
-                  className="px-8 py-3.5 rounded-xl bg-[#1e40af] text-white font-semibold shadow-lg hover:bg-[#1e3a8a] transition-all flex items-center justify-center gap-2 relative overflow-hidden group"
-                >
-                  {/* Button hover effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-white/20"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.6 }}
-                  />
-                  <Phone size={18} className="relative z-10" />
-                  <span className="relative z-10">
-                    Call Now: +91 8879873774
-                  </span>
-                </motion.a>
-
-                <motion.button
-                  variants={fadeInUp}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() =>
-                    document
-                      .getElementById("serviceForm")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="px-8 py-3.5 rounded-xl bg-white border-2 border-[#1e40af] text-[#1e40af] font-semibold hover:bg-[#1e40af] hover:text-white shadow-lg transition-all relative overflow-hidden group"
-                >
-                  {/* Button hover effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-[#1e40af]"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.6 }}
-                  />
-                  <span className="relative z-10">
-                    Book Free Service Consultation
-                  </span>
-                </motion.button>
-              </motion.div>
-
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="mt-6 text-gray-600 text-sm"
-              >
-                ⏰ <strong>Service Hours:</strong> Monday - Sunday: 8:00 AM -
-                10:00 PM | Emergency Service: 24/7
-              </motion.p>
-            </motion.div>
-          </div>
-        </motion.section>
       </main>
     </AnimatePresence>
   );

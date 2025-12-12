@@ -88,7 +88,7 @@ export default function ServicesHighlight() {
             <div className="max-w-7xl mx-auto">
 
                 {/* HEADING */}
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-left mb-8 sm:mb-10 text-[#1e40af]">
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-8 sm:mb-10 text-[#1e40af]">
                     Our Expertise
                 </h2>
 

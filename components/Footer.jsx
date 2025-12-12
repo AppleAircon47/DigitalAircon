@@ -41,7 +41,7 @@ export default function Footer() {
                         <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                         <li><Link href="/AboutUs" className="hover:text-white transition-colors">About Us</Link></li>
                         <li><Link href="/#servicesHighlight" className="hover:text-white transition-colors">Services</Link></li>
-                        <li><Link href="/contact-us" className="hover:text-white transition-colors">Contact Us</Link></li>
+                        <li><Link href="/ContactUs" className="hover:text-white transition-colors">Contact Us</Link></li>
                     </ul>
                 </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
                                 <li><Link href="/" className="hover:text-white">Home</Link></li>
                                 <li><Link href="/AboutUs" className="hover:text-white">About Us</Link></li>
                                 <li><Link href="/#servicesHighlight" className="hover:text-white">Services</Link></li>
-                                <li><Link href="/contact-us" className="hover:text-white">Contact Us</Link></li>
+                                <li><Link href="/ContactUs" className="hover:text-white">Contact Us</Link></li>
                             </ul>
                         </div>
 
@@ -122,7 +122,7 @@ export default function Footer() {
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className="text-gray-300 text-sm">Based on Reviews</span>
-                                <span className="text-yellow-300 font-medium text-sm">80+ Reviews</span>
+                                <span className="text-yellow-300 font-medium text-sm">45+ Reviews</span>
                             </div>
                         </div>
 

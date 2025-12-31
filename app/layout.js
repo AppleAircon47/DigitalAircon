@@ -18,7 +18,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://musk-appliance.vercel.app"),
+  metadataBase: new URL("https://musk-appliance-five.vercel.app"),
 
   title: {
     default:
@@ -55,6 +55,7 @@ export const metadata = {
 
   alternates: {
     canonical: "https://musk-appliance.vercel.app/",
+    canonical: "https://musk-appliance-five.vercel.app/",
   },
 
   openGraph: {
@@ -62,6 +63,7 @@ export const metadata = {
     description:
       "Professional repair, servicing, installation, and buying & selling of ACs, refrigerators, washing machines, microwaves, and deep freezers in Navi Mumbai.",
     url: "https://musk-appliance.vercel.app/",
+    url: "https://musk-appliance-five.vercel.app//",
     siteName: "Digital Aircon",
     locale: "en_IN",
     type: "website",

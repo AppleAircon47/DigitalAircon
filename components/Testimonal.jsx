@@ -113,6 +113,7 @@ export default function TestimonialSection() {
                     <a
                         href={GOOGLE_PROFILE_URL}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium underline"
                     >
                         <FcGoogle className="w-5 h-5" />
@@ -138,6 +139,7 @@ function ReviewCard({ review }) {
         <a
             href={GOOGLE_PROFILE_URL}
             target="_blank"
+            rel="noopener noreferrer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="

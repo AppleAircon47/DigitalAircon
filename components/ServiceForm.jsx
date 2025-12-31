@@ -64,7 +64,7 @@ Hello Digital Aircon 👋
                     <div className="space-y-3 text-sm text-gray-700">
                         <div className="flex items-center gap-3">
                             <Mail className="text-[#1e40af]" size={18} />
-                            appleaircon47@gmail.com
+                            digitalaircon2020@gmail.com
                         </div>
                         <div className="flex items-center gap-3">
                             <Phone className="text-[#1e40af]" size={18} />

@@ -40,8 +40,8 @@ export default function ContactUsPage() {
     {
       icon: <Mail className="w-6 h-6 text-blue-700" />,
       title: "Email Address",
-      value: "appleaircon47@gmail.com",
-      link: "mailto:appleaircon47@gmail.com",
+      value: "digitalaircon2020@gmail.com",
+      link: "mailto:digitalaircon2020@gmail.com",
     },
     {
       icon: <MessageSquare className="w-6 h-6 text-blue-700" />,

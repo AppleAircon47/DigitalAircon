@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Digital Aircon – Expert AC Repair, Servicing & Installation in Navi Mumbai",
+  title: "Digital Aircon – AC Repair, Servicing & Installation in Navi Mumbai",
   description:
     "Digital Aircon provides expert repair, servicing, installation, and buying & selling solutions for ACs, refrigerators, washing machines, microwaves, and deep freezers across Navi Mumbai.",
 };

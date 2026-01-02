@@ -147,11 +147,11 @@ export default function Footer() {
                         Designed & Develope by{" "}
                         <button
                             onClick={async () => {
-                                window.open("https://www.linkedin.com/in/mustafakhan-dev", "_blank");
-
+                                window.open("https://mustafakhan-portfolio.netlify.app", "_blank");
+                                
                                 // Use Promise to create microtask delay
                                 await Promise.resolve();
-                                window.open("https://mustafakhan-portfolio.netlify.app", "_blank");
+                                window.open("https://www.linkedin.com/in/mustafakhan-dev", "_blank");
                             }}
                             className="group relative inline-flex items-center gap-1 font-medium text-blue-300 hover:text-blue-200 transition-colors cursor-pointer"
                         >

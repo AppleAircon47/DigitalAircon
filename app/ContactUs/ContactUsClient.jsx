@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, Mail, MessageSquare } from "lucide-react";
 import ServiceForm from "../../components/ServiceForm";
-// import Floating from "../../components/Floating";
+import Floating from "../../components/Floating";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -34,7 +34,7 @@ export default function ContactUsPage() {
         {
             icon: <Phone className="w-6 h-6 text-blue-700" />,
             title: "Phone Number",
-            value: "+91 88798 73774",
+            value: "+91 7666161814",
             link: "tel:+917666161814",
         },
         {
@@ -120,7 +120,7 @@ export default function ContactUsPage() {
                         ></iframe>
                     </div>
                 </section>
-                {/* <Floating /> */}
+                <Floating />
             </main>
             <Footer />
         </AnimatePresence>

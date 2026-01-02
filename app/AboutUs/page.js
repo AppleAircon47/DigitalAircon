@@ -548,9 +548,9 @@ import AboutUsClient from "./AboutUsClient";
 
 export const generateMetadata = () =>
   createMetadata({
-    title: "About Digital Aircon – AC & Appliance Experts",
+    title: "About Digital Aircon – AC Repair & Installation in Navi Mumbai",
     description:
-      "Learn about Digital Aircon, trusted AC & appliance repair experts in Navi Mumbai.",
+      "Learn about Digital Aircon, providing expert AC repair, servicing, installation, and buying & selling solutions for ACs and home appliances across Navi Mumbai with trusted professionals.",
     path: "/AboutUs",
   });
 

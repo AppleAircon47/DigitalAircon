@@ -132,9 +132,9 @@ import ContactUsClient from "./ContactUsClient";
 
 export const generateMetadata = () =>
   createMetadata({
-    title: "Contact Digital Aircon – AC & Appliance Service",
+    title: "Contact Digital Aircon – AC Repair & Installation in Navi Mumbai",
     description:
-      "Contact Digital Aircon for AC repair, appliance servicing, and quick support in Navi Mumbai.",
+      "Contact Digital Aircon for expert AC repair, servicing, installation, and appliance support including refrigerators, washing machines, microwaves, and deep freezers across Navi Mumbai.",
     path: "/ContactUs",
   });
 

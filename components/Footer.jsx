@@ -133,10 +133,50 @@ export default function Footer() {
             </div>
 
             {/* Bottom Section */}
-            <div className="border-t border-blue-300/20 mt-10 pt-4 text-center text-gray-400 text-sm">
+            {/* <div className="border-t border-blue-300/20 mt-10 pt-4 text-center text-gray-400 text-sm">
                 © {new Date().getFullYear()} Digital Aircon — All Rights Reserved.
+            </div> */}
+            {/* Bottom Section */}
+            <div className="border-t border-blue-300/20 mt-10 pt-6 px-4">
+                <div className="max-w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
+                    <div className="text-gray-400 text-sm text-center md:text-left">
+                        © {new Date().getFullYear()} Digital Aircon — All Rights Reserved.
+                    </div>
+
+                    <div className="text-gray-400 text-sm">
+                        Designed & Develope by{" "}
+                        <button
+                            onClick={async () => {
+                                window.open("https://www.linkedin.com/in/mustafakhan-dev", "_blank");
+
+                                // Use Promise to create microtask delay
+                                await Promise.resolve();
+                                window.open("https://mustafakhan-portfolio.netlify.app", "_blank");
+                            }}
+                            className="group relative inline-flex items-center gap-1 font-medium text-blue-300 hover:text-blue-200 transition-colors cursor-pointer"
+                        >
+                            <span className="relative">
+                                Mustafa Khan
+                                <span className="absolute bottom-0 left-0 w-0 h-px bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                            </span>
+                            <svg
+                                className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <Floating />
+            {/* <Floating /> */}
         </footer>
     );
 }

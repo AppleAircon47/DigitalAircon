@@ -6,6 +6,7 @@ import { Shield, MapPin, Award, Heart, CheckCircle } from "lucide-react";
 import { useRef } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Floating from "../../components/Floating";
 
 export default function AboutUsPage() {
     const containerRef = useRef(null);
@@ -534,7 +535,7 @@ export default function AboutUsPage() {
                         </div>
                     </div>
                 </section>
-                {/* <Floating /> */}
+                <Floating />
                 <Footer />
             </main>
         </AnimatePresence>

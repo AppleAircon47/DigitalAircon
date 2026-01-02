@@ -4,7 +4,7 @@ import Link from "next/link"; // if using Next.js
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-// import Floating from "../../components/Floating";
+import Floating from "../../components/Floating";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -403,8 +403,8 @@ export default function ServiceDetailPage() {
                     </aside>
                 </div>
             </div>
+            <Floating />
             <Footer />
-            {/* <Floating /> */}
         </main>
     );
 }

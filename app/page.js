@@ -1,11 +1,3 @@
-// export const metadata = {
-//   title: "Digital Aircon – AC Repair & Installation in Navi Mumbai",
-//   description:
-//     "Digital Aircon provides expert repair, servicing, installation, and buying & selling solutions for ACs, refrigerators, washing machines, microwaves, and deep freezers across Navi Mumbai.",
-// };
-
-// "use client";
-
 import { createMetadata } from "./lib/seo";
 import Home from "../components/Home";
 import ServicesHighlight from "../components/ServicesHighlight";
@@ -20,9 +12,9 @@ import Footer from "../components/Footer";
 /* ✅ SEO – SERVER SIDE */
 export const generateMetadata = () =>
   createMetadata({
-    title: "Digital Aircon – AC & Appliance Repair in Navi Mumbai",
+    title: "Digital Aircon – AC Repair & Installation in Navi Mumbai",
     description:
-      "Digital Aircon provides expert AC repair, servicing, installation, and appliance solutions in Navi Mumbai.",
+      "Digital Aircon provides expert repair, servicing, installation, and buying & selling solutions for ACs, refrigerators, washing machines, microwaves, and deep freezers across Navi Mumbai.",
     path: "/",
   });
 

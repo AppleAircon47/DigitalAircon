@@ -144,7 +144,7 @@ export default function Footer() {
                     </div>
 
                     <div className="text-gray-400 text-sm">
-                        Designed & Develope by{" "}
+                        Designed & Developed by{" "}
                         <button
                             onClick={async () => {
                                 window.open("https://mustafakhan-portfolio.netlify.app", "_blank");
